@@ -1,0 +1,12 @@
+body{ 
+	background-color: red ;
+	}
+
+ header{
+ 	font-family:Arial ; 
+ }
+
+ #textbox{
+ 	height:400px;
+    width:200px;
+ }

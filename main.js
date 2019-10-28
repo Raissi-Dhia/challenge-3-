@@ -47,6 +47,23 @@ var employeeC = employee("Sara", 150);
 
 // employeeA.listFriends(); // "you have 2 friends"
 
+var  sayMyName =  function(){
+            return employeeName
+        }
+
+var sayHell = function(){
+            return 'hello'+ employeeName;
+        }
+var  increaseSalary =  function(n){
+            employeeSalary = employeeSalary + n;
+            return "Your salary is "+employeeSalary;
+        }
+var   addFriend = function(employee){
+            friends.push(employee);
+            return "You just became friends with " + this.displayFriends();
+        }
+
+
 
 //=============================================================================
 /*                                  Q2                                       */
@@ -102,7 +119,15 @@ function reduce(array, f, acc) {
 // Use the updated version of reduce to write a function max that returns the maximum number in an array of numbers. 
 
 // Write your code here .....
+// we make a variabble that gets the the value of the first index array[0] and we start iterating over the array and comparing the value of array[i] to array[0] and each time there's a new value
+//bigger than the array[0] it overwrite it and get it's place starting from the the index 0 of th array till the end of it .. using the Math.max function 
+function max(array) {
+   
+   return reduce(array, function(element, i){
+        return Math.max(element, i)
+     },0)
 
+}
 
 
 
